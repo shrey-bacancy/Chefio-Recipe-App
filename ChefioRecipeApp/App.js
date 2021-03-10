@@ -1,10 +1,11 @@
 import React from "react";
-import { Text, View } from "react-native";
+import StyleConfig from "./src/constants/StyleConfig";
+import RecipeNavigator from "./src/navigator/RecipeNavigator";
 
 export default function App() {
-  return (
-    <View>
-      <Text>App Screen</Text>
-    </View>
-  );
+  // console.log((StyleConfig.width * 22.1) / 100);
+  // console.log((StyleConfig.height * 4) / 100);
+  // console.log((66 / 812) * 100);
+  // console.log((23 / 375) * 100);
+  return <RecipeNavigator />;
 }
